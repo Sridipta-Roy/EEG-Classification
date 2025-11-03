@@ -508,7 +508,7 @@ def get_callbacks(model_name: str,
             verbose=1
         ),
         callbacks.ModelCheckpoint(
-            filepath=f'../results/models/{model_name}_best.h5',
+            filepath=f'../results/models/{model_name}_best.keras',
             monitor='val_loss',
             save_best_only=True,
             verbose=1
