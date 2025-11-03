@@ -1,0 +1,6 @@
+Characteristic,Bonn Dataset,CHB-MIT Dataset
+Sampling Rate,173.61 Hz,256 Hz
+Channels,1 (Single channel),23-26 channels
+Duration per Segment,23.6 seconds,Variable (hours)
+Total Segments/Files,500 (100 per set),664 files
+Data Format,Text files,EDF (European Data Format)

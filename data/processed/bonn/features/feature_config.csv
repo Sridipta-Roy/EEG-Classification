@@ -1,0 +1,2 @@
+sampling_rate,include_rqa,wavelet_type,wavelet_level,rqa_embedding_dim,rqa_time_delay,rqa_threshold
+173.61,False,db4,5,3,1,0.1
