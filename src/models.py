@@ -508,7 +508,7 @@ def get_callbacks(model_name: str,
             verbose=1
         ),
         callbacks.ModelCheckpoint(
-            filepath=f'../results/models/{model_name}_best.keras',
+            filepath=f'/content/EEG-Classification/results/models/{model_name}_best.keras',
             monitor='val_loss',
             save_best_only=True,
             verbose=1
