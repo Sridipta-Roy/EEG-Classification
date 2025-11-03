@@ -18,7 +18,7 @@ This project implements an end-to-end pipeline for classifying EEG signals to de
 - **Classification**: Binary (Normal vs Seizure)
 - **Features**: 70+ engineered features across 5 categories
 - **Models**: 8 different models (5 ML + 3 DL)
-- **Best Performance**: ~96% F1-Score, ~98% ROC-AUC
+- **Best Performance**: ~99.58% F1-Score, ~99% ROC-AUC
 
 ---
 
@@ -155,26 +155,26 @@ Comprehensive evaluation including:
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 96.5% |
-| Precision | 95.8% |
-| Recall (Sensitivity) | 97.3% |
-| F1-Score | 96.5% |
-| Specificity | 95.7% |
-| ROC-AUC | 98.3% |
+| Accuracy | 99.58% |
+| Precision | 99.34% |
+| Recall (Sensitivity) | 99.83% |
+| F1-Score | 99.58% |
+| Specificity | 99.33% |
+| ROC-AUC | 99.99% |
 
 ### Confusion Matrix (Test Set)
 ```
                 Predicted
               Normal  Seizure
-Actual Normal   359      16
-       Seizure   10     365
+Actual Normal   596      4
+       Seizure   1     599
 ```
 
 ### Key Findings
-- **High sensitivity (97.3%)** ensures most seizures are detected (critical for patient safety)
-- **High specificity (95.7%)** minimizes false alarms
+- **High sensitivity (99.83%)** ensures most seizures are detected (critical for patient safety)
+- **High specificity (99.33%)** minimizes false alarms
 - **Balanced performance** suitable for clinical applications
-- **Feature importance** reveals spectral power and entropy measures as most discriminative
+- **Feature importance** reveals sample_entropy and hurst_exponent measures as most discriminative
 - **Model comparison** shows both traditional ML and deep learning achieve excellent results
 
 ---
